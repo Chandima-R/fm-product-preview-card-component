@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.monsterrat-bold{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.monsterrat-normal{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.fraunces-bold{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+
+button{
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 4px 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover{
+    background-color: hsl(212, 21%, 14%);
+}
+
+button img{
+    margin-right: 10px
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 0 auto;
+    height: 500px;
+    width: 550px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.card-left{
+    height: 100%;
+    width: 300px;
+}
+
+.card-left .desktop{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+.card-left .mobile{
+    display: none;
+}
+
+.card-right{
+    width: 300px;
+    padding: 25px;
+}
+
+.card-right .header{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+}
+
+.card-right .title{
+    font-size: 36px;
+    color: hsl(212, 21%, 14%);
+}
+
+.card-right .description{
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+}
+
+.card-right .currency{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-right .currency h1{
+    color: hsl(158, 36%, 37%);
+    font-size: 36px;
+}
+
+.card-right .currency p{
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    text-decoration: line-through;
+}
+
+@media(max-width: 640px){
+    .card{
+        flex-direction: column;
+        height: 800px;
+        width: auto;
+    }
+
+    .card-left{
+        width: 100%;
+        overflow: hidden;
+        height: 550px;
+    }
+
+    .card-left .desktop{
+        display: none;
+    }
+
+    .card-right{
+        width: auto;
+        padding: 25px;
+    }
+    
+    .card-left .mobile{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px 10px 0 0;
+        display: block;
+    }
+}
